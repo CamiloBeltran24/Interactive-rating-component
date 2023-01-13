@@ -1,0 +1,106 @@
+.card {
+  width: 90%;
+  max-width: 380px;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: rgba($dark_blue, 0.5);
+  padding: 40px 30px;
+  opacity: 1;
+  position: absolute;
+  top: unset;
+  .star {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $dark_blue;
+    background-image: url("/assets/images/svg/icon-star.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    margin-bottom: 25px;
+  }
+  .title {
+    display: block;
+    color: $white;
+    font-size: 2.3rem;
+    margin: 20px 0 10px;
+    font-weight: 700;
+  }
+  .content {
+    color: $medium_grey;
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 30px 0;
+    &-rate {
+      display: grid;
+      place-content: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: $dark_blue;
+      color: $medium_grey;
+      font-size: 1.5rem;
+      font-family: $primary-font;
+      cursor: pointer;
+      &.active{
+        background-color: $light_grey;
+        color: $white;
+      }
+    }
+  }
+  button {
+    background-color: $orange;
+    color: $white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 14px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+  }
+  &.thankyou-box {
+    text-align: center;
+    .rating {
+      color: $orange;
+      padding: 6px 15px;
+      border-radius: 20px;
+      background-color: $dark_blue;
+      width: fit-content;
+      margin: 30px auto;
+      font-size: 1.5rem;
+    }
+  }
+  &.hidden {
+    top: -100% !important;
+    opacity: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    .list {
+      &-rate {
+        &:hover {
+          background-color: $orange;
+          color: $white;
+        }
+      }
+    }
+    button{
+      &:hover {
+        background-color: $white;
+        color: $orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primary-font;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  max-width: 1117px;
+  height: calc(100vh - 40px);
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $very_dark_blue;
+}

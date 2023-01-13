@@ -1,0 +1,24 @@
+{
+  "name": "interactive-rating-component",
+  "version": "1.0.0",
+  "description": "Interactive-rating-component is a challenge created by the \"Frontend Mentor\" platform, the design and images were taken from there.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch assets/scss/styles.scss assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamiloBeltran24/Interactive-rating-component.git"
+  },
+  "keywords": [],
+  "author": "Christian Camilo Beltran Fonseca <cambelf.dev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamiloBeltran24/Interactive-rating-component/issues"
+  },
+  "homepage": "https://github.com/CamiloBeltran24/Interactive-rating-component#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
